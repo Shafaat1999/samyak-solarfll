@@ -1,0 +1,551 @@
+
+/* ================= GENERAL ================= */
+
+.about-hero,
+.about-intro,
+.about-solutions,
+.about-quality-section {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.about-hero {
+    position: relative;
+    min-height: 340px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background-image: url("assets/images/images.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.about-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        90deg,
+        rgba(0, 48, 83, 0.94) 0%,
+        rgba(0, 62, 105, 0.75) 38%,
+        rgba(0, 40, 70, 0.05) 100%
+    );
+}
+
+.about-hero-content {
+    position: relative;
+    z-index: 2;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.about-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.about-label span {
+    width: 13px;
+    height: 3px;
+    background: #55b847;
+}
+
+.about-hero-content h1 {
+    font-size: clamp(32px, 4vw, 48px);
+    line-height: 0.98;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.about-hero-content p {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.about-hero-tagline {
+    position: absolute;
+    z-index: 2;
+    top: 14%;
+    right: 7%;
+    transform: rotate(-8deg);
+    text-align: center;
+}
+
+.about-hero-tagline h5 {
+    font-family: Georgia, serif;
+    font-size: 19px;
+    line-height: 1.05;
+    font-weight: bold;
+    font-style: italic;
+    color: #064775;
+    margin: 0;
+}
+
+.about-hero-tagline span {
+    display: block;
+    width: 90px;
+    height: 4px;
+    background: #319b48;
+    border-radius: 50%;
+    transform: rotate(-5deg);
+    margin: 8px auto 0;
+}
+
+.section-padding {
+    padding: 24px 0;
+}
+
+
+/* ================= MISSION ================= */
+
+.about-intro {
+    background: #fff;
+}
+
+.about-small-title {
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    color: #176c39;
+    margin-bottom: 4px;
+}
+
+.about-mission h2 {
+    font-size: 23px;
+    line-height: 1.2;
+    font-weight: 800;
+    color: #073b69;
+    margin-bottom: 10px;
+}
+
+.about-mission > p {
+    color: #506176;
+    font-size: 15px;
+    line-height: 1.65;
+    margin-bottom: 18px;
+}
+
+.about-stats {
+    margin-top: 5px;
+}
+
+.about-stat-box {
+    height: 100%;
+    min-height: 66px;
+    padding: 10px 8px;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    border: 1px solid #dce9e2;
+    border-radius: 7px;
+    background: #fff;
+}
+
+.about-stat-box > i {
+    flex-shrink: 0;
+    font-size: 27px;
+    color: #16763c;
+}
+
+.about-stat-box small {
+    display: block;
+    color: #284a68;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.about-stat-box h6 {
+    color: #073b69;
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 1.3;
+    margin: 3px 0 0;
+}
+
+.about-stat-box span {
+    display: block;
+    font-size: 9px;
+    color: #697b89;
+    margin-top: 3px;
+}
+
+
+/* ================= FOUNDER ================= */
+
+.about-founder-image {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    border-radius: 8px;
+    background: #e9f2ee;
+}
+
+.about-founder-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+}
+
+.about-founder-card {
+    height: 100%;
+    padding: 12px 14px;
+    background: #eff8f5;
+    border-radius: 7px;
+}
+
+.about-founder-card h3 {
+    font-size: 20px;
+    line-height: 1.3;
+    color: #073b69;
+    font-weight: 800;
+    margin: 5px 0 8px;
+}
+
+.about-green-line {
+    height: 2px;
+    width: 100%;
+    background: #36a64b;
+    margin-bottom: 12px;
+}
+
+.about-founder-card p {
+    font-size: 11px;
+    line-height: 1.65;
+    color: #40556a;
+    margin-bottom: 10px;
+}
+
+
+/* ================= SOLUTIONS ================= */
+
+.about-solutions {
+    padding: 12px 0 24px;
+    background: #fff;
+}
+
+.about-section-heading {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin-bottom: 3px;
+}
+
+.about-heading-line {
+    width: 13px;
+    height: 3px;
+    background: #24884b;
+    flex-shrink: 0;
+}
+
+.about-section-heading h2 {
+    font-size: 22px;
+    font-weight: 800;
+    color: #074675;
+    margin: 0;
+}
+
+.about-section-subtitle {
+    font-size: 12px;
+    color: #53657a;
+    margin-bottom: 16px;
+}
+
+.about-solution-card {
+    height: 100%;
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid #e0e9ee;
+    border-radius: 7px;
+    box-shadow: 0 3px 10px rgba(0, 40, 65, 0.04);
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.about-solution-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 22px rgba(0, 50, 80, 0.12);
+}
+
+.about-solution-image {
+    height: 105px;
+    overflow: hidden;
+    background: #edf3f5;
+}
+
+.about-solution-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.about-solution-card:hover .about-solution-image img {
+    transform: scale(1.06);
+}
+
+.about-solution-content {
+    padding: 10px 8px 12px;
+}
+
+.about-solution-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-height: 34px;
+    margin-bottom: 7px;
+}
+
+.about-solution-icon {
+    width: 31px;
+    height: 31px;
+    min-width: 31px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #087341;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 16px;
+}
+
+.about-solution-title h3 {
+    font-size: 11px;
+    font-weight: 800;
+    line-height: 1.35;
+    color: #16446d;
+    margin: 0;
+}
+
+.about-solution-content p {
+    font-size: 10px;
+    line-height: 1.55;
+    color: #586c7c;
+    margin: 0;
+    padding-left: 39px;
+}
+
+
+/* ================= QUALITY SECTION ================= */
+
+.about-quality-section {
+    margin: 0 0 25px;
+}
+
+.about-quality-section .container {
+    overflow: hidden;
+    border-radius: 8px;
+    background: #eaf7f2;
+}
+
+.about-quality-image {
+    height: 170px;
+    overflow: hidden;
+}
+
+.about-quality-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.about-quality-content {
+    min-height: 170px;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.about-quality-icon {
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #087c43;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 27px;
+}
+
+.about-quality-content h2 {
+    font-size: 20px;
+    font-weight: 800;
+    color: #075078;
+    margin: 2px 0 6px;
+}
+
+.about-quality-content p {
+    font-size: 12px;
+    line-height: 1.6;
+    color: #365b72;
+    margin: 0 0 8px;
+}
+
+.about-quality-content .about-quality-description {
+    font-size: 12px;
+}
+
+
+/* ================= TABLET ================= */
+
+@media (max-width: 991px) {
+
+    .about-hero {
+        min-height: 320px;
+    }
+
+    .about-hero-tagline {
+        right: 5%;
+        top: 12%;
+    }
+
+    .about-hero-tagline h5 {
+        font-size: 16px;
+    }
+
+    .about-founder-image {
+        height: 240px;
+    }
+
+    .about-founder-card {
+        min-height: 240px;
+    }
+
+    .about-solution-image {
+        height: 150px;
+    }
+
+    .about-solution-title h3 {
+        font-size: 13px;
+    }
+
+    .about-solution-content p {
+        font-size: 11px;
+    }
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 575px) {
+
+    .about-hero {
+        min-height: 280px;
+        background-position: 58% center;
+    }
+
+    .about-hero-overlay {
+        background: linear-gradient(
+            90deg,
+            rgba(0, 48, 83, 0.94),
+            rgba(0, 48, 83, 0.60)
+        );
+    }
+
+    .about-hero-content {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .about-hero-content h1 {
+        font-size: 33px;
+    }
+
+    .about-hero-content p {
+        font-size: 12px;
+    }
+
+    .about-hero-tagline {
+        top: auto;
+        bottom: 14px;
+        right: 15px;
+    }
+
+    .about-hero-tagline h5 {
+        font-size: 12px;
+        color: #fff;
+    }
+
+    .about-hero-tagline span {
+        width: 55px;
+        height: 3px;
+    }
+
+    .section-padding {
+        padding: 22px 0;
+    }
+
+    .about-mission h2 {
+        font-size: 22px;
+    }
+
+    .about-founder-image {
+        height: 300px;
+    }
+
+    .about-founder-card {
+        min-height: auto;
+        padding: 18px;
+    }
+
+    .about-founder-card p {
+        font-size: 12px;
+    }
+
+    .about-section-heading h2 {
+        font-size: 21px;
+    }
+
+    .about-section-subtitle {
+        line-height: 1.6;
+    }
+
+    .about-solution-image {
+        height: 145px;
+    }
+
+    .about-solution-content {
+        padding: 12px;
+    }
+
+    .about-solution-title h3 {
+        font-size: 12px;
+    }
+
+    .about-solution-content p {
+        font-size: 11px;
+        padding-left: 39px;
+    }
+
+    .about-quality-image {
+        height: 200px;
+    }
+
+    .about-quality-content {
+        min-height: auto;
+        padding: 18px 14px;
+    }
+
+    .about-quality-icon {
+        width: 42px;
+        height: 42px;
+        min-width: 42px;
+        font-size: 23px;
+    }
+
+    .about-quality-content h2 {
+        font-size: 18px;
+    }
+}
